@@ -35,7 +35,7 @@ const IntroductionRoutes: React.SFC<any> = (props)=> {
       <Row>
         <C spans={[0, 4]}></C>
         <C spans={[ 24, 16]}>
-        <p><Button><Link to='/'><Icon type='home'/></Link></Button></p>
+        <p><Button><Link to='/home'><Icon type='home'/></Link></Button></p>
         <p><Link to='/quiz/comprehension'>Compréhension</Link></p>
         <p><Link to='/quiz/subjonctif'>Subjonctif</Link></p>
           <Switch>

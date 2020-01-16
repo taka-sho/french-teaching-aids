@@ -56,7 +56,7 @@ const Projets: React.SFC<any> = () => {
         <Row>
           <SubC />
           <MainC>
-            <p><Button><Link to='/'><Icon type='home'/></Link></Button></p>
+            <p><Button><Link to='/home'><Icon type='home'/></Link></Button></p>
             <T variant='h2' component='h1'>Les candidat.e.s.</T>
           </MainC>
           <SubC />
