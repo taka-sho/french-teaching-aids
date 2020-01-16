@@ -30,13 +30,13 @@ const C: React.FC<{
 const MainC: React.FC<{}> = ({ children }) => <Col xs={24} sm={24} md={24} lg={8} xl={18} xxl={18}>{children}</Col>
 
 const AreaA = Styled(Row)`
-  background-color: #ddd;
+  background-color: #ffcdd2;
   padding-top: 2em;
   padding-bottom: 2em;
 `
 
 const AreaB = Styled(Row)`
-  background-color: #999;
+  background-color: #e8eaf6;
   padding-top: 2em;
   padding-bottom: 2em;
 `
