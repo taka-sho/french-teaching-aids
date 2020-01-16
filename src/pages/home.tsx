@@ -70,11 +70,45 @@ const Home: React.SFC<{}> = () => {
           </Link>
         </C>
         <C spans={[ 24, 8 ]}>
-          <Link to='/quiz'>
-            <img src='../../assets/images/home/test.png' height='300' style={{ marginTop: 150 }} alt='' />
+          <Link to='/témoignages'>
+            <img src='../../assets/images/home/tell.png' height='300' style={{ marginTop: 150 }} alt='' />
           </Link>
         </C>
       </Row>
+      <Row
+        gutter={48}
+        style={{
+          position: 'fixed',
+          top: '1em',
+          right: '1em',
+          width: '100',
+          height: '100',
+        }}
+      >
+        <C spans={[ 24, 12 ]}>
+          <Link to='/introduction'>
+            <img src='../../assets/images/home/start.png' alt="" style={{ width: '100%' }} />
+          </Link>
+        </C>
+        <C spans={[ 24, 12 ]}>
+          <Link to='/objectifs'>
+            <img src='../../assets/images/home/objectifs.png' alt="" style={{ width: '100%' }} />
+          </Link>
+        </C>
+      </Row>
+      <Link to='/quiz'>
+        <img
+          src='../../assets/images/home/quiz.png'
+          alt=""
+          style={{
+            position: 'fixed',
+            top: '1em',
+            left: '1em',
+            height: '10em',
+            width: '10em'
+          }}
+        />
+      </Link>
     </>
   )
 }

@@ -13,6 +13,7 @@ import Actuelite from './actualite'
 import Home from '../pages/home'
 import Candidat from './candidat'
 import Témoignages from './témoignages'
+import Objectifs from './objectifs'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: { flexGrow: 1 },
@@ -42,6 +43,7 @@ const IndexRoutes: React.SFC<{}> = ()=> {
           <Route path='/quiz' component={Quiz} />
           <Route path='/actuelite' component={Actuelite} />
           <Route path='/témoignages' component={Témoignages} />
+          <Route path='/objectifs' component={Objectifs} />
           {/* <Route exact={true} path='/projets' component={Projets} /> */}
           <Route exact={true} path='/candidat' component={Candidat} />
           <Route exact={true} path='/' component={Home} />

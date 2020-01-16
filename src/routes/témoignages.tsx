@@ -32,13 +32,13 @@ const C: React.FC<{
 const MainC: React.FC<{}> = ({ children }) => <Col xs={24} sm={24} md={24} lg={8} xl={18} xxl={18}>{children}</Col>
 
 const AreaA = Styled(Row)`
-  background-color: #ddd;
+  background-color: #6d4c41;
   padding-top: 2em;
   padding-bottom: 2em;
 `
 
 const AreaB = Styled(Row)`
-  background-color: #999;
+  background-color: #d7ccc8;
   padding-top: 2em;
   padding-bottom: 2em;
 `
@@ -97,7 +97,7 @@ const Projets: React.SFC<any> = () => {
           <MainC>
             <Row gutter={12}  style={{ marginTop: 20 }}>
               <C spans={[ 24, 24 ]}>
-                <T variant='h3' component='h2'>Xavier</T>
+                <T variant='h3' component='h2' style={{ color: '#fff'}}>Xavier</T>
               </C>
               <C spans={[ 24, 24 ]}>
                 <Audio
