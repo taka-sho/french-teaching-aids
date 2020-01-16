@@ -117,7 +117,7 @@ const IntroductionRoutes: React.SFC<any> = ()=> {
           <MainC>
             <Row>
               {/* <Link to='/objectifs'> */}
-              <Link to='/'>
+              <Link to='/home'>
                 <T variant='h4' component='p' style={{ textAlign: 'right', color: '#555' }}><span style={{ borderBottom: 'solid 3px #fff' }}>J’ai compris ! Accéder au bureau<KeyboardArrowRight /></span></T>
               </Link>
             </Row>

@@ -38,7 +38,7 @@ const IndexRoutes: React.SFC<{}> = ()=> {
       </AppBar> */}
       <Container maxWidth='xl' className={classes.main} style={{ padding: 0 }}>
         <HashRouter>
-          <Route exact={true} path='/introduction' component={IntroductionRoutes} />
+          <Route exact={true} path='/home' component={Home} />
           <Route exact={true} path='/currentEvents' component={CurrentEventsRoute} />
           <Route path='/quiz' component={Quiz} />
           <Route path='/actuelite' component={Actuelite} />
@@ -46,7 +46,7 @@ const IndexRoutes: React.SFC<{}> = ()=> {
           <Route path='/objectifs' component={Objectifs} />
           {/* <Route exact={true} path='/projets' component={Projets} /> */}
           <Route exact={true} path='/candidat' component={Candidat} />
-          <Route exact={true} path='/' component={Home} />
+          <Route exact={true} path='/' component={IntroductionRoutes} />
         </HashRouter>
       </Container>
     </>
