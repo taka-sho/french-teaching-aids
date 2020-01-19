@@ -38,9 +38,9 @@ const Comporehension: React.SFC<any> = () => {
         zIndex: -1000,
         backgroundColor: '#b2dfdb'
       }} />
-      <Button
+      {/* <Button
         onClick={() => setStatus('comprehension', { q1: false, q2: false, q3: false, q4: false, q5: false, q6: false, })}
-      >reset</Button>
+      >reset</Button> */}
       <Modal
         title={modalInfo.title}
         visible={modalInfo.visible}

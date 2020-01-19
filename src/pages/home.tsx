@@ -48,9 +48,9 @@ const Home: React.SFC<{}> = () => {
       }}>
         <img src='../../assets/images/home/back.png' width='100%' />
       </div>
-      <div>
-        <Typography variant='h2' style={{ color: '#555'}}>{Object.keys(status.comprehension).filter(key => status.comprehension[key]).length === 5 ? 'C ✅' : ''}</Typography>
-        <Typography variant='h2' style={{ color: '#555'}}>{Object.keys(status.subjonctifStatus).filter(key => status.subjonctifStatus[key]).length === 6 ? 'S ✅' : ''}</Typography>
+      <div style={{ marginLeft: 140 }}>
+        <Typography variant='h5' style={{ color: '#555'}}>{Object.keys(status.comprehension).filter(key => status.comprehension[key]).length === 5 ? 'C ✅' : ''}</Typography>
+        <Typography variant='h5' style={{ color: '#555'}}>{Object.keys(status.subjonctifStatus).filter(key => status.subjonctifStatus[key]).length === 6 ? 'S ✅' : ''}</Typography>
       </div>
       <Row style={{
         position: 'fixed',
@@ -86,7 +86,7 @@ const Home: React.SFC<{}> = () => {
         }}
       >
         <C spans={[ 24, 12 ]}>
-          <Link to='/introduction'>
+          <Link to='/'>
             <img src='../../assets/images/home/start.png' alt="" style={{ width: '100%' }} />
           </Link>
         </C>

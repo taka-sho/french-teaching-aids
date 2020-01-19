@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Route, Switch, Link } from 'react-router-dom'
-import { Button, Icon, Row, Col } from 'antd'
+import { Link } from 'react-router-dom'
+import { Button, Icon, Row, Col, Tabs } from 'antd'
 
 import Page1 from '../pages/quiz/subjonctif'
 import Page2 from '../pages/quiz/comprehension'
@@ -19,8 +19,7 @@ const C: React.FC<{
   />
 )
 
-const IntroductionRoutes: React.SFC<any> = (props)=> {
-  const root = props.match.url
+const IntroductionRoutes: React.SFC<any> = ()=> {
   return (
     <>
       <div style={{
@@ -36,12 +35,10 @@ const IntroductionRoutes: React.SFC<any> = (props)=> {
         <C spans={[0, 4]}></C>
         <C spans={[ 24, 16]}>
         <p><Button><Link to='/home'><Icon type='home'/></Link></Button></p>
-        <p><Link to='/quiz/comprehension'>Compréhension</Link></p>
-        <p><Link to='/quiz/subjonctif'>Subjonctif</Link></p>
-          <Switch>
-            <Route exact={true} path={`${root}/subjonctif`} component={Page1} />
-            <Route exact={true} path={`${root}/comprehension`} component={Page2} />
-          </Switch>  
+        <Tabs defaultActiveKey='1' type='line'>
+          <Tabs.TabPane key='1' tab='Subjonctif'><Page1/></Tabs.TabPane>
+          <Tabs.TabPane key='2' tab='Compréhension'><Page2/></Tabs.TabPane>
+        </Tabs>
         </C>
         <C spans={[0, 4]}></C>
       </Row>

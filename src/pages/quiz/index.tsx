@@ -6,8 +6,8 @@ const IntroductionRoutes: React.SFC<any> = ()=> {
   return (
     <>
       <p><Button><Link to='/'><Icon type='home'/></Link></Button></p>
-      <p><Link to='/quiz/comprehension'>Compréhension</Link></p>
-      <p><Link to='/quiz/subjonctif'>Subjonctif</Link></p>
+      {/* <p><Link to='/quiz/comprehension'>Compréhension</Link></p>
+      <p><Link to='/quiz/subjonctif'>Subjonctif</Link></p> */}
     </>
   )
 }

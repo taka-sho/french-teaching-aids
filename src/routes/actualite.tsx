@@ -101,7 +101,8 @@ const Projets: React.SFC<any> = () => {
               <C spans={[ 24, 24 ]}>
                 <T variant='h3' component='h1'>Les préoccupations des Français</T>
               </C>
-              <C spans={[ 24, 12 ]}>
+              <C spans={[ 24, 2 ]}></C>
+              <C spans={[ 24, 20 ]}>
                 <img
                   style={{ width: '100%', cursor: 'help' }}
                   src='../../assets/images/actualite/1.png'
@@ -109,14 +110,15 @@ const Projets: React.SFC<any> = () => {
                   onClick={() => setRILOptions({ mainSrc: '../../assets/images/actualite/1.png', isOpen: true })}
                 />
               </C>
-              <C spans={[ 24, 12 ]}>
+              <C spans={[ 24, 2 ]}></C>
+              {/* <C spans={[ 24, 12 ]}>
                 <img
                   style={{ width: '100%', cursor: 'help' }}
                   src='../../assets/images/actualite/2.png'
                   alt=""
                   onClick={() => setRILOptions({ mainSrc: '../../assets/images/actualite/2.png', isOpen: true })}
                 />
-              </C>
+              </C> */}
             </Row>
             <Row>
           </Row>
@@ -159,6 +161,14 @@ Les partis politiques se positionnent en fonction de ces deux grandes forces. Il
           </MainC>
           <SubC />
         </AreaA>
+
+        <Row>
+          <SubC />
+          <MainC>
+            <p><Button><Link to='/home'><Icon type='home'/></Link></Button></p>
+          </MainC>
+          <SubC />
+        </Row>
     </>
   )
 }

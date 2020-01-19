@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Button, Modal } from 'antd'
 import Styled from 'styled-components'
 import * as ReactCookie from 'react-cookie'
-import { Typography } from '@material-ui/core'
+import { Typography, Card, CardContent } from '@material-ui/core'
 
 const QuestionParagraph = Styled.p`
   margin-left: 2em;
@@ -18,6 +18,11 @@ const QuestionInput = Styled.input`
 
 const VerifierButton = Styled(Button)`
   margin-left: 1em;
+`
+
+const T = Styled(Typography)`
+  margin-top: 0.3em !important;
+  margin-bottom: 0.3em !important;
 `
 
 const Subjonctif: React.SFC<any> = () => {
@@ -46,9 +51,9 @@ const Subjonctif: React.SFC<any> = () => {
         zIndex: -1000,
         backgroundColor: '#90caf9'
       }} />
-      <Button
+      {/* <Button
         onClick={() => setStatus('subjonctifStatus', { q1: false, q2: false, q3: false, q4: false, q5: false, q6: false, })}
-      >reset</Button>
+      >reset</Button> */}
       <Modal
         title={modalInfo.title}
         visible={modalInfo.visible}
@@ -58,9 +63,22 @@ const Subjonctif: React.SFC<any> = () => {
         {modalInfo.content}
       </Modal>
 
-      <Typography variant='h2'>Subjonctif {Object.keys(status.subjonctifStatus).filter(key => status.subjonctifStatus[key]).length === 6 ? '✅' : ''}</Typography>
+      <Typography variant='h2'>Le subjonctif {Object.keys(status.subjonctifStatus).filter(key => status.subjonctifStatus[key]).length === 6 ? '✅' : ''}</Typography>
+      <Card style={{ margin: '2em 0'}}>
+        <CardContent>
+            <T>On utilise le subjonctif pour exprimer beaucoup de choses dans la vie quotidienne :
+            un souhait (sauf « espérer »), une volonté, une obligation, un ordre, une opinion à la forme négative, une émotion, un doute, une possibilité, une nécessité...
+            <br/><br/>
+            On utilise le subjonctif avec le verbe de la proposition subordonnée, qui suit souvent « que » :
+            <ul>
+              <li>Je veux <u>que vous fassiez</u> vos devoirs.  (-> volonté)</li>
+              <li>Je ne pense pas <u>qu’il vienne</u>. (-> opinion à la forme négative)</li>
+            </ul>
+            </T>
+        </CardContent>
+      </Card>
       <div style={{ marginLeft: '1em' }}>
-      <h3>1. pouvoir {status.subjonctifStatus.q1 ? '✅': ''}</h3>
+        <h3>1. pouvoir {status.subjonctifStatus.q1 ? '✅': ''}</h3>
         <QuestionParagraph>
           Il fault absolument que l'Etat
           {
