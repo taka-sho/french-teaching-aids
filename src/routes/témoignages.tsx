@@ -31,11 +31,11 @@ const C: React.FC<{
 
 const MainC: React.FC<{}> = ({ children }) => <Col xs={24} sm={24} md={24} lg={8} xl={18} xxl={18}>{children}</Col>
 
-const AreaA = Styled(Row)`
-  background-color: #6d4c41;
-  padding-top: 2em;
-  padding-bottom: 2em;
-`
+// const AreaA = Styled(Row)`
+//   background-color: #6d4c41;
+//   padding-top: 2em;
+//   padding-bottom: 2em;
+// `
 
 const AreaB = Styled(Row)`
   background-color: #d7ccc8;
@@ -67,12 +67,12 @@ const Projets: React.SFC<any> = () => {
           <SubC />
           <MainC>
             <p><Button><Link to='/home'><Icon type='home'/></Link></Button></p>
-            <T variant='h3' component='h1'>Ecoutez 3 témoignages par téléphone</T>
+            {/* <T variant='h3' component='h1'>Ecoutez 3 témoignages par téléphone</T> */}
           </MainC>
           <SubC />
         </Row>
 
-        <AreaB>
+        {/* <AreaB>
           <SubC />
           <MainC>
             <Row gutter={12}>
@@ -108,25 +108,33 @@ const Projets: React.SFC<any> = () => {
             </Row>
           </MainC>
           <SubC />
-        </AreaA>
+        </AreaA> */}
 
         <AreaB>
           <SubC />
           <MainC>
             <Row gutter={12}>
               <C spans={[ 24, 24 ]}>
-                <T variant='h3' component='h2'>Solange</T>
+                <T variant='h3' component='h2'>L'avis de Solange, une citoyenne</T>
               </C>
               <C spans={[ 24, 24 ]}>
                 <Audio
                   src='../../assets/audio/solange.mp3'
-                  style={{ width: '100%' }}
+                  style={{ width: '100%', marginTop: '5em' }}
                 />
               </C>
             </Row>
           </MainC>
           <SubC />
         </AreaB>
+
+        <Row>
+          <SubC />
+          <MainC>
+            <p><Button><Link to='/home'><Icon type='home'/></Link></Button></p>
+          </MainC>
+          <SubC />
+        </Row>
     </>
   )
 }

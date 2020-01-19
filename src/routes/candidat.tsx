@@ -9,9 +9,9 @@ const T = Styled(Typography)`
 `
 
 const Name: React.FC<{}> = ({ children }) => <T variant='h4' component='h2'>{children}</T>
-const Politique: React.FC<{}> =  ({ children }) => <T variant='h5' component='p'>Parti politique : {children}</T>
+const Politique: React.FC<{}> =  ({ children }) => <T variant='h5' component='p'>Camp politique : {children}</T>
 
-const SubC = () => <Col xs={0} sm={0} md={0} lg={3} xl={3} xxl={3}></Col>
+const SubC = () => <Col xs={0} sm={0} md={0} lg={4} xl={4} xxl={4}></Col>
 
 const C: React.FC<{
   spans: number[]
@@ -27,7 +27,7 @@ const C: React.FC<{
   />
 )
 
-const MainC: React.FC<{}> = ({ children }) => <Col xs={24} sm={24} md={24} lg={8} xl={18} xxl={18}>{children}</Col>
+const MainC: React.FC<{}> = ({ children }) => <Col xs={24} sm={24} md={24} lg={16} xl={16} xxl={16}>{children}</Col>
 
 const AreaA = Styled(Row)`
   background-color: #ffcdd2;
@@ -65,21 +65,27 @@ const Projets: React.SFC<any> = () => {
         <AreaA>
           <SubC />
           <MainC>
-            <Row gutter={12}>
+            <Row gutter={48}>
               <C spans={[ 24, 24 ]}>
                 <Name>Laurent Wauquiez</Name>
                 <Politique>Les Républicains</Politique>
               </C>
-              <C spans={[ 24, 12 ]}>
-                <img style={{ width: '100%' }} src='../../assets/images/candidat/1.png' alt=""/>
-              </C>
-              <C spans={[ 24, 12 ]}>
-                <img style={{ width: '100%' }} src='../../assets/images/candidat/2.png' alt=""/>
-                <Typography variant='caption'>© Le Monde / LUDOVIC MARIN / AFP</Typography>
-              </C>
-              <C spans={[ 24, 24 ]}>
-                <T variant='h5' component='p'>Positionnement du parti :<strong>droite</strong></T>
-              </C>
+              <Row gutter={48}>
+                <C spans={[ 24, 13 ]}>
+                  <img style={{ width: '100%' }} src='../../assets/images/candidat/1.png' alt=""/>
+                  <Typography variant='caption'>© Le Monde / LUDOVIC MARIN / AFP</Typography>
+                  <img style={{ width: '100%' }} src='../../assets/images/candidat/2.png' alt=""/>
+                  <C spans={[ 24, 24 ]}>
+                    <T variant='h5' component='p'>Positionnement du parti :<strong>droite</strong></T>
+                  </C>
+                </C>
+                <C spans={[ 0, 2 ]}></C>
+                <C spans={[ 24, 8 ]}>
+                <T variant='body1'>Les principales préoccupations du parti</T>
+                  <img style={{ width: '100%' }} src='../../assets/images/candidat/l1.jpg' alt=""/>
+                </C>
+                <C spans={[ 0, 1 ]}></C>
+              </Row>
             </Row>
             <Row>
             <SubC />
@@ -92,21 +98,25 @@ const Projets: React.SFC<any> = () => {
         <AreaB>
           <SubC />
           <MainC>
-            <Row gutter={12}>
+            <Row gutter={48}>
               <C spans={[ 24, 24 ]}>
                 <Name>Marine Le Pen</Name>
                 <Politique>Rassemblement National<br/>(anciennement (jusqu’à 2018) : « Front National (FN) »)</Politique>
               </C>
-              <C spans={[ 24, 12 ]}>
-                <img style={{ width: '100%' }} src='../../assets/images/candidat/3.png' alt=""/>
-              </C>
-              <C spans={[ 24, 12 ]}>
-                <img style={{ width: '100%' }} src='../../assets/images/candidat/4.png' alt=""/>
-                <Typography variant='caption'>© France 24/Dimitar Dilkoff, AFP</Typography>
-              </C>
-              <C spans={[ 24, 24 ]}>
-                <T variant='h5' component='p'>Positionnement du parti :<strong>extrême droite</strong></T>
-              </C>
+              <Row gutter={48}>
+                <C spans={[ 24, 13 ]}>
+                  <img style={{ width: '100%' }} src='../../assets/images/candidat/3.png' alt=""/>
+                  <Typography variant='caption'>© France 24/Dimitar Dilkoff, AFP</Typography>
+                  <img style={{ width: '100%' }} src='../../assets/images/candidat/4.png' alt=""/>
+                  <T variant='h5' component='p'>Positionnement du parti :<strong>extrême droite</strong></T>
+                </C>
+                <C spans={[ 0, 2 ]}></C>
+                <C spans={[ 24, 8 ]}>
+                  <T variant='body1'>Les principales préoccupations du parti</T>
+                  <img style={{ width: '100%' }} src='../../assets/images/candidat/l2.jpg' alt=""/>
+                </C>
+                <C spans={[ 0, 1]}></C>
+              </Row>
             </Row>
           </MainC>
           <SubC />
@@ -115,21 +125,23 @@ const Projets: React.SFC<any> = () => {
         <AreaA>
           <SubC />
           <MainC>
-            <Row gutter={12}>
+            <Row gutter={48}>
               <C spans={[ 24, 24 ]}>
               <Name>Emmanuel Macron</Name>
               <Politique>La République en marche</Politique>
               </C>
-              <C spans={[ 24, 12 ]}>
+              <C spans={[ 24, 13 ]}>
                 <img style={{ width: '100%' }} src='../../assets/images/candidat/5.png' alt=""/>
-              </C>
-              <C spans={[ 24, 12 ]}>
-                <img style={{ width: '100%' }} src='../../assets/images/candidat/6.png' alt=""/>
                 <Typography variant='caption'>© Europe1/Kenzo TRIBOUILLARD / AFP</Typography>
-              </C>
-              <C spans={[ 24, 24 ]}>
+                <img style={{ width: '100%' }} src='../../assets/images/candidat/6.png' alt=""/>
                 <T variant='h5' component='p'>Positionnement du parti :<strong>extrême droite</strong></T>
               </C>
+              <C spans={[ 0, 2 ]}></C>
+              <C spans={[ 24, 8 ]}>
+              <T variant='body1'>Les principales préoccupations du parti</T>
+                <img style={{ width: '100%' }} src='../../assets/images/candidat/l3.jpg' alt=""/>
+              </C>
+              <C spans={[ 0, 1 ]}></C>
             </Row>
           </MainC>
           <SubC />
@@ -138,21 +150,23 @@ const Projets: React.SFC<any> = () => {
         <AreaB>
           <SubC />
           <MainC>
-            <Row gutter={12}>
+            <Row gutter={48}>
               <C spans={[ 24, 24 ]}>
                 <Name>Jean-Luc Mélenchon</Name>
                 <Politique>La France insoumise</Politique>
               </C>
-              <C spans={[ 24, 12 ]}>
+              <C spans={[ 24, 13 ]}>
                 <img style={{ width: '100%' }} src='../../assets/images/candidat/7.png' alt=""/>
-              </C>
-              <C spans={[ 24, 12 ]}>
-                <img style={{ width: '100%' }} src='../../assets/images/candidat/8.png' alt=""/>
                 <Typography variant='caption'>© Europe1/Kenzo TRIBOUILLARD / AFP</Typography>
-              </C>
-              <C spans={[ 24, 24 ]}>
+                <img style={{ width: '100%' }} src='../../assets/images/candidat/8.png' alt=""/>
                 <T variant='h5' component='p'>Positionnement du parti :<strong>extrême gauche</strong></T>
               </C>
+              <C spans={[ 0, 2 ]}></C>
+              <C spans={[ 24, 8 ]}>
+              <T variant='body1'>Les principales préoccupations du parti</T>
+                <img style={{ width: '100%' }} src='../../assets/images/candidat/l4.jpg' alt=""/>
+              </C>
+              <C spans={[ 0, 1 ]}></C>
             </Row>
           </MainC>
           <SubC />
@@ -161,25 +175,34 @@ const Projets: React.SFC<any> = () => {
         <AreaA>
           <SubC />
           <MainC>
-            <Row gutter={12}>
+            <Row gutter={48}>
               <C spans={[ 24, 24 ]}>
                 <Name>Olivier Faure</Name>
                 <Politique>Parti Socialiste</Politique>
               </C>
-              <C spans={[ 24, 12 ]}>
+              <C spans={[ 24, 13 ]}>
                 <img style={{ width: '100%' }} src='../../assets/images/candidat/9.png' alt=""/>
-              </C>
-              <C spans={[ 24, 12 ]}>
-                <img style={{ width: '100%' }} src='../../assets/images/candidat/10.png' alt=""/>
                 <Typography variant='caption'>© Europe1/Kenzo TRIBOUILLARD / AFP</Typography>
-              </C>
-              <C spans={[ 24, 24 ]}>
+                <img style={{ width: '100%' }} src='../../assets/images/candidat/10.png' alt=""/>
                 <T variant='h5' component='p'>Positionnement du parti :<strong>extrême gauche</strong></T>
               </C>
+              <C spans={[ 0, 2 ]}></C>
+              <C spans={[ 24, 8 ]}>
+                <T variant='body1'>Les principales préoccupations du parti</T>
+                <img style={{ width: '100%' }} src='../../assets/images/candidat/l5.jpg' alt=""/>
+              </C>
+              <C spans={[ 0, 1 ]}></C>
             </Row>
           </MainC>
           <SubC />
         </AreaA>
+        <Row>
+          <SubC />
+          <MainC>
+            <p><Button><Link to='/home'><Icon type='home'/></Link></Button></p>
+          </MainC>
+          <SubC />
+        </Row>
     </>
   )
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Typography } from '@material-ui/core'
 import Styled from 'styled-components'
 import { KeyboardArrowRight } from '@material-ui/icons'
-import Audio from 'react-h5-audio-player'
+// import Audio from 'react-h5-audio-player'
 
 const T = Styled(Typography)`
   margin-top: 0.3em !important;
@@ -12,19 +12,19 @@ const T = Styled(Typography)`
 
 const SubC = () => <Col xs={0} sm={0} md={0} lg={3} xl={3} xxl={3}></Col>
 
-const C: React.FC<{
-  spans: number[]
-}> = ({ children, spans }) => (
-  <Col
-    xs={spans[0]}
-    sm={spans[0]}
-    md={spans[0]}
-    lg={spans[1]}
-    xl={spans[1]}
-    xxl={spans[1]}
-    children={children}
-  />
-)
+// const C: React.FC<{
+//   spans: number[]
+// }> = ({ children, spans }) => (
+//   <Col
+//     xs={spans[0]}
+//     sm={spans[0]}
+//     md={spans[0]}
+//     lg={spans[1]}
+//     xl={spans[1]}
+//     xxl={spans[1]}
+//     children={children}
+//   />
+// )
 
 const MainC: React.FC<{}> = ({ children }) => <Col xs={24} sm={24} md={24} lg={8} xl={18} xxl={18}>{children}</Col>
 
@@ -65,15 +65,15 @@ const IntroductionRoutes: React.SFC<any> = ()=> {
           <MainC>
             <T variant='h3'>Vous devez :</T>
             <ul>
-              <li><T variant='h5'>Naviguer dans l’activité</T></li>
-              <li><T variant='h5'>Répondre correctement aux deux questionnaires</T></li>
-              <li><T variant='h5'>Choisir un candidat et justifier votre choix (présentation orale)</T></li>
+              <li><T variant='h5'>Naviguer dans l’activité et répondre correctement aux deux questionnaires (cliquer sur l’icone "questionnaire")</T></li>
+              <li><T variant='h5'>Reconstituer la transcription de la vidéo (voir l’enveloppe)</T></li>
+              <li><T variant='h5'>Vous présenter aux élections en tant que nouveau parti politique et justifier vos préoccupations (voir la fiche pour la présentation orale)</T></li>
             </ul>
           </MainC>
           <SubC />
         </AreaA>
 
-        <AreaB>
+        {/* <AreaB>
           <SubC />
           <MainC>
             <Row gutter={24}>
@@ -110,7 +110,7 @@ const IntroductionRoutes: React.SFC<any> = ()=> {
             </Row>
           </MainC>
           <SubC />
-        </AreaA>
+        </AreaA> */}
 
         <AreaB>
           <SubC />
