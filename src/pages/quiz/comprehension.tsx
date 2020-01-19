@@ -55,12 +55,12 @@ const Comporehension: React.SFC<any> = () => {
         {Object.keys(status.comprehension).filter(key => status.comprehension[key]).length === 5 ? '✅' : ''}
       </Typography>
       <div style={{ marginLeft: '1em' }}>
-        <h3>1. Quelle est la principale préoccuoation des gens de driote? {status.comprehension.q1 ? '✅': ''}</h3>
+        <h3>1. Quelle est la principale préoccupation des gens de droite? {status.comprehension.q1 ? '✅': ''}</h3>
         {
           !status.comprehension.q1 ? (
             <p>
               <RadioGroup value={answer.q1} onChange={(e) => setAnswer({ ...answer, q1: e.target.value})}>
-                <Radio value={1}>Le contrôle de l'immigration*</Radio>
+                <Radio value={1}>Le contrôle de l'immigration</Radio>
                 <Radio value={2}>Les impôrts et les taxes</Radio>
               </RadioGroup>
               <VerifierButton
@@ -101,7 +101,7 @@ const Comporehension: React.SFC<any> = () => {
           ) : <p style={{ marginLeft: '2em' }}>La gauche</p>
         }
 
-        <h3>3. « La pauvreté et les inégalités sociales» sont une grande inquiétude pour <b>parti politique</b>?{status.comprehension.q3 ? '✅': ''}</h3>
+        <h3>3. « Le pauvreté et les inégalités sociales» sont une grande inquiétude pour <b>parti politique</b>?{status.comprehension.q3 ? '✅': ''}</h3>
         {
           !status.comprehension.q3 ? (
             <p>
