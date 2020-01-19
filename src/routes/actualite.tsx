@@ -150,7 +150,7 @@ Les partis politiques se positionnent en fonction de ces deux grandes forces. Il
             <Row gutter={12} style={{ marginTop: 20 }}>
               <C spans={[ 24, 16 ]}>
                   <T variant='h6' component='p'>
-                  Les termes de gauche et droite proviendrait de la place des membres de l’Assemblée à la Révolution française : les partisants du roi était assis à droite, les autres à gauche. Mais c’est véritablement au XXe siècle que s’est constitué le clivage gauche-droite.
+                  Les termes de gauche et droite proviendraient de la place des membres de l’Assemblée à la Révolution française : les partisans du roi était assis à droite, les autres à gauche. Mais c’est véritablement au XXe siècle que s’est constitué le clivage gauche-droite.
                   </T>
               </C>
               <C spans={[ 24, 8 ]}>

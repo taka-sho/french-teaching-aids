@@ -80,7 +80,7 @@ const Subjonctif: React.SFC<any> = () => {
       <div style={{ marginLeft: '1em' }}>
         <h3>1. pouvoir {status.subjonctifStatus.q1 ? '✅': ''}</h3>
         <QuestionParagraph>
-          Il fault absolument que l'Etat
+          Il faut absolument que l'Etat
           {
             !status.subjonctifStatus.q1 ? (
               <QuestionInput
@@ -237,7 +237,7 @@ const Subjonctif: React.SFC<any> = () => {
               />
             ) : <b> partions </b>
           }
-          en vacancee la semaine prochaine.
+          en vacances la semaine prochaine.
           {
             status.subjonctifStatus.q6 ||
             <VerifierButton
