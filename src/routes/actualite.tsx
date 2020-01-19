@@ -131,7 +131,7 @@ const Projets: React.SFC<any> = () => {
           <MainC>
             <Row gutter={12}  style={{ marginTop: 20 }}>
               <C spans={[ 24, 24 ]}>
-                <T variant='h3' component='h1'>Les préoccupations des Français</T>
+                <T variant='h3' component='h1'>La gauche et la droite</T>
                 <Audio
                   src='../../assets/audio/gauchedroite.mp3'
                   style={{ width: '100%', margin: '0.75em 0'}}
